@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=Monacoin Core
+Comment=Connect to the Monacoin P2P Network
+Comment[de]=Verbinde mit dem Monacoin peer-to-peer Netzwerk
+Comment[fr]=Monacoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Monacoin, eşten eşe kriptografik sanal para birimi
+Exec=monacoin.qt %u
+Terminal=false
+Type=Application
+Icon=${SNAP}/share/pixmaps/monacoin128.png
+MimeType=x-scheme-handler/monacoin;
+Categories=Office;Finance;P2P;Network;Qt;
+StartupWMClass=Monacoin-qt
