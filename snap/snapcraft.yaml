@@ -8,7 +8,7 @@ description: |
 
 grade: stable
 confinement: strict
-base: core20
+base: core24
 
 apps:
   daemon:
@@ -83,10 +83,10 @@ parts:
       env | grep SNAP
       #wget https://bitcoincore.org/bin/bitcoin-core-${SNAPCRAFT_PROJECT_VERSION}/SHA256SUMS
       wget https://github.com/monacoinproject/monacoin/releases/download/v${SNAPCRAFT_PROJECT_VERSION}/monacoin-${SNAPCRAFT_PROJECT_VERSION}.tar.gz
-      wget https://github.com/monacoinproject/monacoin/releases/download/v${SNAPCRAFT_PROJECT_VERSION}/monacoin-${SNAPCRAFT_PROJECT_VERSION}-${SNAPCRAFT_ARCH_TRIPLET_BUILD_FOR}.tar.gz
+      wget https://github.com/monacoinproject/monacoin/releases/download/v${SNAPCRAFT_PROJECT_VERSION}/monacoin-${SNAPCRAFT_PROJECT_VERSION}-${CRAFT_ARCH_TRIPLET_BUILD_FOR}.tar.gz
       #echo "2f2aa5a87b74319bac9d41c811437a9d05720e0914489bce357de794034f7313  SHA256SUMS" | sha256sum --check
       #sha256sum --ignore-missing --check SHA256SUMS
-      tar -xvf monacoin-${SNAPCRAFT_PROJECT_VERSION}-${SNAPCRAFT_ARCH_TRIPLET_BUILD_FOR}.tar.gz
+      tar -xvf monacoin-${SNAPCRAFT_PROJECT_VERSION}-${CRAFT_ARCH_TRIPLET_BUILD_FOR}.tar.gz
       tar -xvf monacoin-${SNAPCRAFT_PROJECT_VERSION}.tar.gz
       echo "Running tests ..."
       #monacoin-${SNAPCRAFT_PROJECT_VERSION}/bin/test_monacoin
